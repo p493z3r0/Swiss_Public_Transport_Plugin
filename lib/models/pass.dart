@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'package:swiss_public_transport_plugin/models/station.dart';
+
 class Pass {
   static bool _dateTest(String date) {
     if (date == null) {

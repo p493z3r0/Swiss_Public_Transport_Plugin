@@ -1,5 +1,4 @@
-class Product{
+class Product {
   String name;
   Product({this.name});
-  
 }

@@ -1,4 +1,5 @@
 import 'package:swiss_public_transport_plugin/models/pass.dart';
+
 class Journey {
   List<Pass> passList;
   String name;

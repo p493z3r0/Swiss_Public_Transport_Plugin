@@ -1,14 +1,6 @@
-import 'dart:convert';
-import 'package:location/location.dart';
 import 'product.dart';
 import 'package:swiss_public_transport_plugin/models/pass.dart';
 import 'package:swiss_public_transport_plugin/models/sections.dart';
-
-
-
-
-
-
 
 class Connection {
   Pass from;
