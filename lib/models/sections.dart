@@ -10,7 +10,7 @@ class Section {
   Section({this.journey, this.walk, this.departure, this.arrival});
   factory Section.fromJson(Map<String, dynamic> json) {
     if (json == null) {
-      print("Parsing: Section was null");
+      return new Section();
     }
 
     return new Section(

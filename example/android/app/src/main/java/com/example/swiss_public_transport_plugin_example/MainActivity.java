@@ -1,4 +1,4 @@
-package com.example.swiss_public_transport_plugin_example;
+package com.jaermann.swiss_public_transport_plugin_example;
 
 import android.os.Bundle;
 import io.flutter.app.FlutterActivity;

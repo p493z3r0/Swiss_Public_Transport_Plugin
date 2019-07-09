@@ -1,4 +1,4 @@
-group 'com.example.swiss_public_transport_plugin'
+group 'com.jaermann.swiss_public_transport_plugin'
 version '1.0-SNAPSHOT'
 
 buildscript {

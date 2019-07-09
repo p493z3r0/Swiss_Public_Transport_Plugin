@@ -32,13 +32,8 @@ class Timetable {
 
     Set<Connection> conns = new Set();
     for (Map<String, dynamic> connect in json['connections']) {
-      var station = Station.fromJson(json['from']);
-      print(station.name);
       var connection = new Connection.fromJson(connect);
       conns.add(connection);
-      for (var product in connection.products) {
-        print(product.name);
-      }
     }
 
     return Timetable(

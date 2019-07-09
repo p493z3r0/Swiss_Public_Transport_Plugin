@@ -1,6 +1,28 @@
 import 'package:swiss_public_transport_plugin/models/pass.dart';
 
 class Journey {
+
+  static bool isNumeric(String s) {
+    if (s == null) {
+      return false;
+    }
+    var ret = double.parse(s, (e) => null) != null;
+
+    return ret;
+  }
+
+  static String stripString(String str) {
+    str = str.replaceAll(new RegExp("r^\\d."), "");
+    var outStr = "";
+    for (int i = 0; i < str.length; i++) {
+      var char = str[i];
+      if(isNumeric(char)){
+        outStr += char;
+      }
+    }
+    return outStr;
+  }
+
   List<Pass> passList;
   String name;
   String category;
@@ -24,7 +46,7 @@ class Journey {
     var category = json['category'];
     var subcategory = json['subcategory'];
     var categoryCode = json['categoryCode'];
-    var number = json['number'];
+    var number = stripString(json['number']);
     var operator = json['operator'];
     var to = json['to'];
     return new Journey(

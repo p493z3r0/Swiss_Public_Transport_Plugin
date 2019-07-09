@@ -1,4 +1,4 @@
-package com.example.swiss_public_transport_plugin;
+package com.jaermann.swiss_public_transport_plugin;
 
 import io.flutter.plugin.common.MethodCall;
 import io.flutter.plugin.common.MethodChannel;

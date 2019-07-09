@@ -18,11 +18,8 @@ class Pass {
 
   factory Pass.fromJson(Map<String, dynamic> json) {
     if (json == null) {
-      print("Init pass, json was null");
       return new Pass();
-    } else {
-      print('Continuing pass parsing..');
-    }
+    } 
 
     var station = new Station.fromJson(json['station']);
     var delay = json['delay'];
