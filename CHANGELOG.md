@@ -10,3 +10,7 @@
 
 * Updated pugin info
 * Added Licence
+
+## 0.0.4
+
+* Added repository
