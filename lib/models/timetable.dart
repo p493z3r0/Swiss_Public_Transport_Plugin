@@ -22,7 +22,6 @@ class Timetable {
     } else {
       return null;
     }
-    print('No matching plan has been found. Sorry');
     return null;
   }
 

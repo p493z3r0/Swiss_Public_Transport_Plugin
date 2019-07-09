@@ -11,7 +11,7 @@ class SwissPublicTransportPlugin {
   Future<Timetable> getTimeTable(String from, String to) async {
     try {
       var response = await http
-          .get('http://transport.opendata.ch/v1/connections?from=$from&to=$to');
+          .get('https://transport.opendata.ch/v1/connections?from=$from&to=$to');
       return Timetable.fromJson(json.decode(response.body));
     } catch (error) {
       print("Swiss_Public_Transport_Plugin: ERROR: " + error.toString());
