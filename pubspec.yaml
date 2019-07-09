@@ -1,0 +1,23 @@
+name: swiss_public_transport_plugin
+description:  A Plugin to communicate with the Swiss Public Transport backends
+version: 0.0.3
+author: Dominic Järmann <dominic.jaermann@icloud.com>
+homepage: https://github.com/Dominic12
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  location: ^1.4.1
+  http: ^0.12.0+2
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  plugin:
+    androidPackage: com.jaermann.swiss_public_transport_plugin
+    pluginClass: SwissPublicTransportPlugin
