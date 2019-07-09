@@ -1,6 +1,6 @@
 name: swiss_public_transport_plugin
 description:  A Plugin to communicate with the Swiss Public Transport backends
-version: 0.1.2
+version: 0.1.3
 author: Dominic Järmann <dominic.jaermann@icloud.com>
 homepage: https://github.com/Dominic12
 repository: https://github.com/Dominic12/Swiss_Public_Transport_Plugin
