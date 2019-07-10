@@ -12,6 +12,7 @@ class Journey {
   }
 
   static String stripString(String str) {
+    if(str == null) return str;
     str = str.replaceAll(new RegExp("r^\\d."), "");
     var outStr = "";
     for (int i = 0; i < str.length; i++) {
