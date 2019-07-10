@@ -8,6 +8,12 @@ class Section {
   Pass departure;
   Pass arrival;
   Section({this.journey, this.walk, this.departure, this.arrival});
+  bool isWalk(){
+    return (this.walk.duration != null);
+  }
+  bool isPublicTransportRide(){
+        return !this.isWalk();
+  }
   factory Section.fromJson(Map<String, dynamic> json) {
     if (json == null) {
       return new Section();
