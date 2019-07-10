@@ -9,7 +9,7 @@ class Section {
   Pass arrival;
   Section({this.journey, this.walk, this.departure, this.arrival});
   bool isWalk(){
-    return (this.walk.duration != null);
+    return (this.walk != null);
   }
   bool isPublicTransportRide(){
         return !this.isWalk();
